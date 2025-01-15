@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yash1648.github.com/personal-portfolio",
+  "homepage": "https://yash1648.github.io/personal-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
