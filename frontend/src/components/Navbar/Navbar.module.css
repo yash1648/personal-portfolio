@@ -38,6 +38,12 @@
   text-decoration: none;
 }
 
+
+.menuItems a:hover {
+  color: var(--color-primary);  /* Color change on hover */
+  transform: scale(1.1);  /* Slight zoom effect */
+}
+
 @media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
@@ -65,14 +71,15 @@
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    );
+    background: rgb(74, 20, 140);  /* Deep purple (your secondary color) */
+background: linear-gradient(
+  0deg,
+  rgba(74, 20, 140, 0.2) 0%,  /* Semi-transparent deep purple */
+  rgba(12, 12, 12, 0.9) 100%  /* Dark gray with higher opacity */
+);
     padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 6px 2px rgba(74, 20, 140, 0.5);
+
   }
 
   .menuOpen {

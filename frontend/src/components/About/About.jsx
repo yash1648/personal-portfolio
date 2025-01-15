@@ -8,13 +8,13 @@ export const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src={getImageURL("about/aboutImage.png")}
+          src={getImageURL("about/image.png")}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageURL("about/cursorIcon.png")} alt="Cursor icon" />
+            <img src={getImageURL("about/cursorIcon.png")} alt="Cursor icon" className={styles.contentImg} />
             <div className={styles.aboutItemText}>
               <h3>Frontend Developer</h3>
               <p>
@@ -24,22 +24,21 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageURL("about/serverIcon.png")} alt="Server icon" />
+            <img src={getImageURL("about/backend.png")} alt="Server icon" className={styles.contentImg} />
             <div className={styles.aboutItemText}>
               <h3>Backend Developer</h3>
               <p>
-                I have experience developing fast and optimised back-end systems
+                I have experience developing fast and optimized back-end systems
                 and APIs
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageURL("about/cursorIcon.png")} alt="UI icon" />
+            <img src={getImageURL("about/linux.png")} alt="UI icon" className={styles.contentImg} />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>Linux User</h3>
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                I have good understanding of the linux distro. I have tried multiple distro's like arch,kali,ubuntu and many more.
               </p>
             </div>
           </li>

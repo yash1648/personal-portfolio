@@ -53,7 +53,7 @@
 }
 
 .contactBtn:hover {
-  background-color: var(--color-accent); /* Light red for hover effect */
+  background-color: var(--color-accent); 
 }
 
 .heroImg {
@@ -103,6 +103,36 @@
   filter: blur(100px);
   z-index: 0;
 }
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.rewritetext {
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--color-text);
+  white-space: nowrap;  /* Prevents the text from wrapping */
+  overflow: hidden;  /* Hides the overflow text initially */
+  border-right: 4px solid;  /* Creates the cursor effect */
+  width: 0;  /* Starts with no text showing */
+  animation: typing 4s steps(7) infinite, blink 0.75s step-end infinite;  /* Continuous typing and erasing effect */
+}
+
 
 @media screen and (max-width: 830px) {
   .container {

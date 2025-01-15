@@ -4,11 +4,20 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  background: linear-gradient( 180deg,
+  rgba(74, 20, 140, 0.5) 0%,  /* Semi-transparent deep purple (your secondary color) */
+  rgba(12, 12, 12, 0.8) 100%  );
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
 }
+
+.disabled {
+  color: gray; /* Disabled text color */
+  pointer-events: none; /* Prevents clicking */
+  cursor: not-allowed; /* Cursor style indicating disabled state */
+}
+
 
 .image {
   margin-bottom: 26px;
